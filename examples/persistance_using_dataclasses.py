@@ -22,7 +22,7 @@ class State:  # Store app state in a dataclass, which can include nested datacla
 
 
 try:
-    with open("app-state.json", "r") as f:
+    with open("app-state-dataclass.json", "r") as f:
         state = State(**json.load(f))
 except:
     state = State()
@@ -37,12 +37,12 @@ with dpg.window():
     dpg.add_button(label="Print app state", callback=lambda: print(state))
 
 
-dpg.create_viewport(title="App Persistance Demo", height=400, width=500)
+dpg.create_viewport(title="App Persistance Demo using Dataclasses", height=400, width=500)
 dpg.setup_dearpygui()
 dpg.show_viewport()
 try:
     dpg.start_dearpygui()
 finally:
-    with open("app-state.json", "w") as f:
+    with open("app-state-dataclass.json", "w") as f:
         json.dump(asdict(state), f, indent=4)
     dpg.destroy_context()
