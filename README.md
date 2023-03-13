@@ -11,6 +11,7 @@ A collection of example scripts which demonstrate various features/functionality
 - [Drawing](#drawing)
     - [Simple paint](#simple-paint)
 - [Listbox](#listbox)
+- [Menubar](#menubar)
 - [Misc](#misc)
 - [Persistance](#persistance)
 - [Plots](#plots)
@@ -39,6 +40,10 @@ A very simple implementation of a paint app. It demonstrates how you can click a
 ## [Listbox](listbox/)
 
 Examples of custom listbox widgets which extend the functionality of the default listbox. Includes how to implement a listbox which is unselected by default and how to respond to key presses.
+
+## [Menubar](menubar/)
+
+Examples of how to implement all the different types of menubar and how to implement a right-aligned menubar.
 
 ## [Misc](misc/)
 
