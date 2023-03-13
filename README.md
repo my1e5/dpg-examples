@@ -1,8 +1,9 @@
 # DearPyGui examples
 A collection of example scripts which demonstrate various features/functionality in DearPyGui.
 
-![Simple paint](assets/gifs/simple_paint.gif)
-![Marker size](assets/gifs/marker_size.gif)
+<p align="center">
+    <img src="assets/gifs/simple_paint.gif" width="380"> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <img src="assets/gifs/simple_paint.gif" width="380">
+</p>
 ![Progress bar](assets/gifs/progress_bar.gif)
 
 ## Examples
