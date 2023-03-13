@@ -2,9 +2,11 @@
 A collection of example scripts which demonstrate various features/functionality in DearPyGui.
 
 <p align="center">
-    <img src="assets/gifs/simple_paint.gif" width="380"> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <img src="assets/gifs/simple_paint.gif" width="380">
+    <img src="assets/gifs/simple_paint.gif" width="380"> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <img src="assets/gifs/marker_size.gif" width="380">
 </p>
-![Progress bar](assets/gifs/progress_bar.gif)
+<p align="center">
+    <img src="assets/gifs/progress_bar.gif" width="380"> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; >
+</p>
 
 ## Examples
 
