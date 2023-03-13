@@ -41,7 +41,7 @@ Miscellaneous examples.
 
 ## Persistance
 
-Examples of how to save and load the state of a GUI. This includes the values of GUI items, the position of windows, etc. A simple example using `dict` is shown as well as a more advanced example using `dataclasses`.
+Examples of how to save and load the state of a GUI. This includes the values of GUI items, the position of windows, etc. A simple example using `dict` is shown as well as an approach using `dataclasses`. Both store the app state in a JSON file.
 
 ## Plots
 
