@@ -20,7 +20,7 @@ A collection of example scripts which demonstrate various features/functionality
     - [Progress bar](#progress-bar)
 - [Window](#window)
 
-## Buttons
+## [Buttons](buttons/)
 
 Examples of how to implement various types of buttons. This includes how to implement a button which changes colour when clicked and how to implement nested radio buttons.
 
