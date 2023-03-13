@@ -1,21 +1,8 @@
 # DearPyGui examples
 A collection of example scripts which demonstrate various features/functionality in DearPyGui.
 
-<style>
-  .image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .image-container img {
-    margin: 5px;
-  }
-</style>
-
-<div class="image-container">
-    <img src=assets/gifs/simple_paint.gif width=45%/> 
-    <img src=assets/gifs/progress_bar.gif width=45%/>
-</div>
+<img src=assets/gifs/simple_paint.gif width=50%/>
+<img src=assets/gifs/progress_bar.gif width=50%/>
 
 ## Examples
 
