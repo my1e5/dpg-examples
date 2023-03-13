@@ -2,8 +2,8 @@
 A collection of example scripts which demonstrate various features/functionality in DearPyGui.
 
 <p align="center">
-      <img src="assets/gifs/simple_paint.gif" align="left">
-      <img src="assets/gifs/progress_bar.gif" align="right">
+      <img src="assets/gifs/simple_paint.gif" align="left" width="45%">
+      <img src="assets/gifs/progress_bar.gif" align="right" width="45%">
 </p>
 
 ## Examples
