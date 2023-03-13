@@ -1,7 +1,10 @@
 # DearPyGui examples
 A collection of example scripts which demonstrate various features/functionality in DearPyGui.
 
-![Simple paint](assets/gifs/simple_paint.gif =50%x) ![Progress bar](assets/gifs/progress_bar.gif =50%x)
+<p align="center">
+      <img src="assets/gifs/simple_paint.gif" align="left">
+      <img src="assets/gifs/progress_bar.gif" align="right">
+</p>
 
 ## Examples
 
