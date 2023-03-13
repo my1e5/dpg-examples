@@ -33,7 +33,7 @@ Examples of how to implement various types of buttons. This includes how to impl
 
 Examples of how to link a data structure to GUI items so that changes made using the GUI are reflected in the underlying data structure.
 
-<img src="assets/pngs/data_binding.png" width="200"/>
+<img src="assets/pngs/data_binding.png" width="400"/>
 
 ## [Drawing](drawing/)
 
