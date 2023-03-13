@@ -7,7 +7,7 @@ with dpg.viewport_menu_bar():
     dpg.add_menu_item(label="Edit")
     dpg.add_menu_item(label="View")
 
-with dpg.window(menubar=True):
+with dpg.window(pos=(100,100)):
     with dpg.menu_bar():
         with dpg.menu(label="File"):
             dpg.add_menu_item(label="New")
