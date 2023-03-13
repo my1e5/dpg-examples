@@ -42,7 +42,7 @@ with dpg.window() as primary_window:
 
 
 dpg.set_primary_window(primary_window, True)
-dpg.create_viewport(width=400, height=100, title="Data binding with dict")
+dpg.create_viewport(width=400, height=300, title="Data binding with dict")
 dpg.setup_dearpygui()
 dpg.show_viewport()
 dpg.start_dearpygui()
