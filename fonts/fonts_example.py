@@ -28,7 +28,7 @@ with dpg.window(width=700, height=500):
     )
     dpg.add_separator()
     dpg.add_text('''* Here is some text in the regular font (Inter-Regular.ttf) for comparison.
-  Depending on the the screen it can look a bit more fuzzy compared to the medium weight font.
+  Depending on the screen it can look a bit more fuzzy compared to the medium weight font.
 
 * Another thing to try is different font sizes. Experiment with different sizes and see what looks best.'''
     )
