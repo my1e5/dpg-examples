@@ -14,6 +14,7 @@ A collection of example scripts which demonstrate various features/functionality
 - [Data binding](#data-binding)
 - [Drawing](#drawing)
     - [Simple paint](#simple-paint)
+- [Fonts](#fonts)
 - [Listbox](#listbox)
 - [Menubar](#menubar)
 - [Misc](#misc)
@@ -38,6 +39,10 @@ Examples of how to link a data structure to GUI items so that changes made using
 ## [Drawing](drawing/)
 
 Examples of how to use the drawing API.
+
+## [Fonts](fonts/)
+
+Examples of how to use custom fonts. And some tips on how to get the best results.
 
 ### [Simple paint](drawing/simple_paint.py)
 
