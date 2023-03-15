@@ -40,13 +40,13 @@ Examples of how to link a data structure to GUI items so that changes made using
 
 Examples of how to use the drawing API.
 
-## [Fonts](fonts/)
-
-Examples of how to use custom fonts. And some tips on how to get the best results.
-
 ### [Simple paint](drawing/simple_paint.py)
 
 A very simple implementation of a paint app. It demonstrates how you can click and drag the mouse on a `dpg.add_drawlist` and draw basic free-form lines using `dpg.draw_line`.
+
+## [Fonts](fonts/)
+
+Examples of how to use custom fonts. And some tips on how to get the best results.
 
 ## [Listbox](listbox/)
 
