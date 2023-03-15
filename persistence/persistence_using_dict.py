@@ -34,7 +34,7 @@ with dpg.window():
     dpg.add_input_float(label="Baz", default_value=state["settings"]["baz"], callback=lambda s, d: state["settings"].__setitem__("baz", d))
     dpg.add_button(label="Print app state", callback=lambda: print(state))
 
-dpg.create_viewport(title="App Persistance Demo using Dict", height=400, width=500)
+dpg.create_viewport(title="App Persistence Demo using Dict", height=400, width=500)
 dpg.setup_dearpygui()
 dpg.show_viewport()
 try:

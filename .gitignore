@@ -1,6 +1,6 @@
 wip
 .vscode
-persistance/*.json
+persistence/*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

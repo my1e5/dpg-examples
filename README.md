@@ -18,7 +18,7 @@ A collection of example scripts which demonstrate various features/functionality
 - [Listbox](#listbox)
 - [Menubar](#menubar)
 - [Misc](#misc)
-- [Persistance](#persistance)
+- [Persistence](#persistence)
 - [Plots](#plots)
 - [Sizing](#sizing)
 - [Spacing](#spacing)
@@ -60,7 +60,7 @@ Examples of how to implement all the different types of menubar and how to imple
 
 Miscellaneous examples.
 
-## [Persistance](persistance/)
+## [Persistence](persistence/)
 
 Examples of how to save and load the state of a GUI. This includes the values of GUI items, the position of windows, etc. A simple example using `dict` is shown as well as an approach using `dataclasses`. Both store the app state in a JSON file.
 

@@ -28,7 +28,7 @@ if previous_state:
     for values in previous_state["windows"].values():
         create_new_window(None, None, (values["width"], values["height"], values["pos"], values["text"], values["slider"]))
     
-dpg.create_viewport(title="Persistance of Windows Demo", height=700, width=1200)
+dpg.create_viewport(title="Persistence of Windows Demo", height=700, width=1200)
 dpg.setup_dearpygui()
 dpg.show_viewport()
 try:

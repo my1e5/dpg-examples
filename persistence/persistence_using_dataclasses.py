@@ -37,7 +37,7 @@ with dpg.window():
     dpg.add_button(label="Print app state", callback=lambda: print(state))
 
 
-dpg.create_viewport(title="App Persistance Demo using Dataclasses", height=400, width=500)
+dpg.create_viewport(title="App Persistence Demo using Dataclasses", height=400, width=500)
 dpg.setup_dearpygui()
 dpg.show_viewport()
 try:
