@@ -17,7 +17,7 @@ with dpg.window():
     dpg.add_button(label="Print points x,y data", callback=lambda: print([dpg.get_value(child)[0:2] for child in dpg.get_item_children(yaxis)[1]]))
 
 with dpg.item_handler_registry() as registry:
-    dpg.add_item_clicked_handler(button=dpg.mvMouseButton_Right, callback= plot_mouse_click_callback)
+    dpg.add_item_clicked_handler(button=dpg.mvMouseButton_Right, callback=plot_mouse_click_callback)
 dpg.bind_item_handler_registry(plot, registry)
 
 
