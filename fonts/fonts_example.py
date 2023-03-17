@@ -14,11 +14,14 @@ with dpg.window(width=700, height=500):
     dpg.bind_item_font(dpg.last_item(), font_bold)
     dpg.add_separator()
     dpg.add_text('''* If your fonts look a bit fuzzy it sometimes helps to multiply the font by a scaling factor (e.g. 2) 
-  and then multiply the global font scale by 1/factor. I find it helps on high DPI displays to make the font look 'crisper'.
+  and then multiply the global font scale by 1/factor. 
+  I find it helps on high DPI displays to make the font look 'crisper'.
 
 * On Windows this might help:
       import ctypes
       ctypes.windll.shcore.SetProcessDpiAwareness(2)
+
+      # put before dpg.show_viewport()
 
 * If you have an integrated graphics card this might help:
       dpg.configure_app(auto_device=True)
@@ -30,7 +33,9 @@ with dpg.window(width=700, height=500):
     dpg.add_text('''* Here is some text in the regular font (Inter-Regular.ttf) for comparison.
   Depending on the screen it can look a bit more fuzzy compared to the medium weight font.
 
-* Another thing to try is different font sizes. Experiment with different sizes and see what looks best.'''
+* Another thing to try is different font sizes. Experiment with different sizes and see what looks best.
+
+* A good source for open source fonts is google - https://fonts.google.com/'''
     )
     dpg.bind_item_font(dpg.last_item(), font_regular)
 
