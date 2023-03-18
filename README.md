@@ -22,6 +22,7 @@ A collection of example scripts which demonstrate various features/functionality
 - [Plots](#plots)
 - [Sizing](#sizing)
 - [Spacing](#spacing)
+- [Tables](#tables)
 - [Threading](#threading)
     - [Progress bar](#progress-bar)
 - [Window](#window)
@@ -76,6 +77,9 @@ Examples of how to size/re-size GUI items. There are some quirks with sizing - m
 
 Examples of how to space GUI items using different methods. This includes automatic spacing, spacing using a grid of child windows and spacing using tables.
 
+## [Tables](tables/)
+
+Examples of how to use tables. 
 ## [Threading](threading/)
 
 Examples of how to use threading in DearPyGui. Includes a start/stop button which can be used to start/stop a thread and a progress bar to show the progress of a task.
