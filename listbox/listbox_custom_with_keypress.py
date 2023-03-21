@@ -28,9 +28,7 @@ def add_custom_listbox(items: list[str], tag: str, height: int, width: int = -1,
         listbox_ids, items = user_data
         letter = ascii_dict.get(app_data)
         if letter and dpg.is_item_hovered(tag):
-            for idx, item_id in enumerate(listbox_ids):
-                if dpg.get_value(item_id) is True:
-                    start_index = idx
+            start_index = next(i for i, item_id in enumerate(listbox_ids) if dpg.get_value(item_id))
             for idx, item in enumerate(items[start_index+1:]):
                 if item.startswith(letter):
                     _selection(listbox_ids[start_index+1+idx], None, listbox_ids)
@@ -46,13 +44,12 @@ def add_custom_listbox(items: list[str], tag: str, height: int, width: int = -1,
 
         for item in user_data:
             dpg.set_value(item, False)
+            dpg.bind_item_theme(item, theme_item_normal)
+            
         dpg.set_value(sender, True)
+        dpg.bind_item_theme(sender, theme_item_selected)
 
-        for item in user_data:
-            if dpg.get_value(item) is True:
-                dpg.bind_item_theme(item, theme_item_selected)
-            else:
-                dpg.bind_item_theme(item, theme_item_normal)
+
 
     with dpg.child_window(tag=tag, height=height, width=width):
         for item in items:
