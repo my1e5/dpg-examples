@@ -33,12 +33,12 @@ def add_custom_listbox(items: list[str], tag: str, height: int, width: int = -1,
             for idx, item in enumerate(items[start_index+1:]):
                 if item.startswith(letter):
                     _selection(listbox_ids[start_index+1+idx], None, listbox_ids)
-                    dpg.set_y_scroll(child_window, max(0,dpg.get_item_pos(listbox_ids[start_index+1+idx])[1] - scroll_offset))
+                    dpg.set_y_scroll(tag, max(0,dpg.get_item_pos(listbox_ids[start_index+1+idx])[1] - scroll_offset))
                     return
             for idx, item in enumerate(items[:start_index]):
                 if item.startswith(letter):
                     _selection(listbox_ids[idx], None, listbox_ids)
-                    dpg.set_y_scroll(child_window, max(0,dpg.get_item_pos(listbox_ids[idx])[1] - scroll_offset))
+                    dpg.set_y_scroll(tag, max(0,dpg.get_item_pos(listbox_ids[idx])[1] - scroll_offset))
                     return
 
     def _selection(sender, app_data, user_data):
@@ -53,7 +53,7 @@ def add_custom_listbox(items: list[str], tag: str, height: int, width: int = -1,
             else:
                 dpg.bind_item_theme(item, theme_item_normal)
 
-    with dpg.child_window(tag=tag, height=height, width=width) as child_window:
+    with dpg.child_window(tag=tag, height=height, width=width):
         for item in items:
             dpg.add_selectable(label=item)
 
@@ -82,3 +82,4 @@ dpg.setup_dearpygui()
 dpg.show_viewport()
 dpg.start_dearpygui()
 dpg.destroy_context()
+
