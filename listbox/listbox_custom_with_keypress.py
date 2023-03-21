@@ -22,6 +22,7 @@ def add_custom_listbox(items: list[str], tag: str, height: int, width: int = -1,
     with dpg.theme() as theme_item_normal:
         with dpg.theme_component(dpg.mvSelectable):
             dpg.add_theme_color(dpg.mvThemeCol_Header, (51, 51, 55, 255))
+            dpg.add_theme_color(dpg.mvThemeCol_HeaderHovered, (51, 51, 55, 255))
 
     def _key_press_handler(sender, app_data, user_data):
         listbox_ids, items = user_data
