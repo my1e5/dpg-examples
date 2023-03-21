@@ -26,7 +26,7 @@ def add_custom_listbox(items: list[str], tag: str, height: int, width: int = -1,
     def _key_press_handler(sender, app_data, user_data):
         listbox_ids, items = user_data
         letter = ascii_dict.get(app_data)
-        if letter:
+        if letter and dpg.is_item_hovered(tag):
             for idx, item_id in enumerate(listbox_ids):
                 if dpg.get_value(item_id) is True:
                     start_index = idx
@@ -67,14 +67,18 @@ def add_custom_listbox(items: list[str], tag: str, height: int, width: int = -1,
     with dpg.handler_registry():
         dpg.add_key_press_handler(callback=_key_press_handler, user_data=(listbox_ids, items))
 
+   
 
 with dpg.window(tag="primary_window"):
+
+    dpg.add_text("Custom listbox using selectables and with key press enabled\n(only works when the listbox is hovered)")
 
     items = ['Apple', 'Apricot', 'Avocado', 'Banana', 'Broccoli', 'Carrot', 'Cherry', 'Cucumber', 'Grape', 'Kiwi', 'Lemon', 'Mango', 'Orange', 'Papaya', 'Peach', 'Pear', 'Pepper', 'Pineapple', 'Potato', 'Raspberry', 'Strawberry', 'Tomato', 'Watermelon']
 
     add_custom_listbox(items=items, tag="custom_listbox", height=200, scroll_offset=100)
 
     dpg.add_button(label="Print Selected in Custom Listbox", callback=print_selected)
+
 
 dpg.set_primary_window("primary_window", True)
 dpg.create_viewport(title='Custom listbox using selectables and with key press enabled', width=600, height=600)
