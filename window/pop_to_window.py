@@ -6,7 +6,9 @@ def move_group(sender, app_data, user_data):
 
     def close():
         dpg.move_item(group, parent=window)
+        dpg.delete_item(new_window)
         dpg.show_item(sender)
+
 
     with dpg.window(on_close=close) as new_window:
         dpg.move_item(group, parent=new_window)    
