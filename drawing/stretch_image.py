@@ -19,20 +19,19 @@ def stretch_image(data, width: int, height: int, stretch: int) -> tuple[int, int
     return width * stretch, height * stretch, res
 
 
-with dpg.window(width=400, height=400):
+with dpg.window(width=500, height=500):
 
-    width, height, channels, data = dpg.load_image("pizza.png")
+    width, height, channels, data = dpg.load_image("beach.jpg")
     width_stretched, height_stretched, data_stretched = stretch_image(data, width, height, 2)
 
     with dpg.texture_registry():
-        dpg.add_static_texture(width, height, data, tag="pizza_original")
-        dpg.add_static_texture(width_stretched, height_stretched, data_stretched, tag="pizza_stretched")
+        dpg.add_static_texture(width, height, data, tag="beach_original")
+        dpg.add_static_texture(width_stretched, height_stretched, data_stretched, tag="beach_stretched")
 
-    dpg.add_image(texture_tag="pizza_original", width=width, height=height)
-    dpg.add_image(texture_tag="pizza_stretched", width=width_stretched, height=height_stretched)
+    dpg.add_image(texture_tag="beach_original", width=width, height=height)
+    dpg.add_image(texture_tag="beach_stretched", width=width_stretched, height=height_stretched)
 
-    dpg.add_text("pizza.png icon made by Freepik from www.flaticon.com - https://www.flaticon.com/free-icon/pizza_3595455", wrap=400)
-   
+
 
 dpg.create_viewport(width=800, height=600, title="Stretch image by integer factor")
 dpg.setup_dearpygui()
