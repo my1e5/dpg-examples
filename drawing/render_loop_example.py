@@ -5,7 +5,7 @@ dpg.create_context()
 CANVAS_SIZE = 300
 
 width, height, channels, data = dpg.load_image("beach.jpg")
-with dpg.texture_registry(show=True):
+with dpg.texture_registry(show=False):
     dpg.add_static_texture(width, height, data, tag="beach")
 
 
@@ -15,7 +15,7 @@ def update_circle():
     dpg.configure_item("circle", center=(x,y))
     
     
-with dpg.window(width=400, height=400):
+with dpg.window():
     dpg.set_primary_window(dpg.last_item(), True)
 
     with dpg.drawlist(width=CANVAS_SIZE, height=CANVAS_SIZE):
