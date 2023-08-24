@@ -46,7 +46,7 @@ def cached_class_attr(f):
 
 
 class DatePicker:
-    weekdays = ('Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa')
+    weekdays = ('Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su')
     months = (
         '1-January', '2-February',
         '3-March', '4-April', '5-May',
