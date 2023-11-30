@@ -1,0 +1,27 @@
+version: '3'
+
+tasks:
+  build-mac-nuitka:
+    platforms: [darwin]
+    cmds:
+      - >
+        python -m nuitka --standalone main.py
+        --macos-create-app-bundle
+        --macos-app-name=MyApp
+        --include-data-dir=assets=assets
+
+  build-win-nuitka:
+    platforms: [windows]
+    cmds:
+      - >
+        python -m nuitka --onefile main.py
+        --include-data-dir=assets=assets
+        --disable-console
+
+  build-win-pyinstaller:
+    platforms: [windows]
+    cmds:
+      - >
+        pyinstaller --onefile --windowed main.py
+        --add-data="assets/fonts/*;assets/fonts/"
+        --add-data="assets/img/*;assets/img/"
