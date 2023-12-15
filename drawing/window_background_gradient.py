@@ -23,7 +23,7 @@ with dpg.window(label="tutorial", width=500, height=500) as wnd:
         fill=True
     )
     with dpg.child_window(pos=(8, 28)):
-        dpg.add_checkbox(label=dpg.get_dearpygui_version(), callback=lambda s, a: print(a), default_value=True)
+        dpg.add_checkbox(label=dpg.get_dearpygui_version())
         dpg.add_button(label="Lorem ipsum", callback=lambda: print("dolor sit"))
 
 dpg.show_viewport()
