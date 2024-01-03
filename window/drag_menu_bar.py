@@ -1,5 +1,6 @@
 # Inspired by https://github.com/bandit-masked/raccoon/blob/main/src/gui/gui.py#L231
 # and credit to @Atlamillias on Discord.
+# see also drag_undecorated_viewport.py
 import dearpygui.dearpygui as dpg
 dpg.create_context()
 
