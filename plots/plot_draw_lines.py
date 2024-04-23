@@ -9,6 +9,8 @@ def unlock_axis(axis):
     dpg.set_axis_limits_auto(axis)
 
 def plot_mouse_click_callback():
+    if not dpg.get_value(drawing_mode):
+        return
     lock_axis(xaxis), lock_axis(yaxis)
     dpg.delete_item(xaxis, children_only=True) # delete the previous line series
 
@@ -33,6 +35,7 @@ def plot_mouse_click_callback():
 
 with dpg.window():
     dpg.add_text("Left click and drag on the plot to add a line series.\nIt only works if you drag left to right.")
+    drawing_mode = dpg.add_checkbox(label="Drawing mode", default_value=True)
     with dpg.plot(anti_aliased=True) as plot: 
         xaxis = dpg.add_plot_axis(dpg.mvXAxis)
         yaxis = dpg.add_plot_axis(dpg.mvYAxis)
